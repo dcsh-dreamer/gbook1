@@ -31,13 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'web',
+    # 'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'web',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +122,5 @@ STATIC_URL = '/static/'
 
 # 登入後重新導向首頁 (預設會導向 /accounts/profile/)
 LOGIN_REDIRECT_URL = '/'
+
+# LOGOUT_REDIRECT_URL = '/'
